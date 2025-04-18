@@ -1,329 +1,691 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/pngtree-letter-s-logo-icon-free-vector-illustration-png-image_9116009-DTo8licB.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>السيد الاخرسي | مطور Laravel و Vue.js</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script type="module" crossorigin src="/assets/index-CD_jDZDB.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-LD6CP22F.css">
+</head>
+<body class="font-tajawal text-gray-100 bg-gray-900">
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900">
+    <div class="loader">
+      <svg width="100" height="100" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#3B82F6">
+        <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="1">
+            <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite" />
+          </circle>
+        </g>
+      </svg>
+    </div>
+  </div>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Header and Navigation -->
+  <header class="fixed w-full z-30 transition-all duration-300" id="header">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="logo text-2xl font-bold text-blue-500">
+        <a href="#hero">السيد الاخرسي</a>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8 space-x-reverse">
+        <ul class="flex space-x-8 space-x-reverse">
+          <li><a href="#about" class="hover:text-blue-500 transition-colors duration-300">نبذة عني</a></li>
+          <li><a href="#skills" class="hover:text-blue-500 transition-colors duration-300">المهارات</a></li>
+          <li><a href="#projects" class="hover:text-blue-500 transition-colors duration-300">الأعمال</a></li>
+        </ul>
+        <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">اتصل بي</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900 bg-opacity-95 z-40 hidden flex-col justify-center items-center">
+      <button id="menu-close" class="absolute top-6 right-6 text-2xl">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="text-center space-y-8">
+        <li><a href="#hero" class="text-2xl hover:text-blue-500 transition-colors duration-300">الرئيسية</a></li>
+        <li><a href="#about" class="text-2xl hover:text-blue-500 transition-colors duration-300">نبذة عني</a></li>
+        <li><a href="#skills" class="text-2xl hover:text-blue-500 transition-colors duration-300">المهارات</a></li>
+        <li><a href="#projects" class="text-2xl hover:text-blue-500 transition-colors duration-300">الأعمال</a></li>
+        <li>
+          <a href="#contact" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300 mt-4">اتصل بي</a>
+        </li>
+        <!-- <li>
+          <button id="mobile-language-toggle" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300 mt-4">
+            English
+          </button>
+        </li> -->
+      </ul>
+    </div>
+  </header>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen pt-24 md:pt-0 flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="hero-bg-pattern absolute inset-0 opacity-20"></div>
+      <div class="hero-bg-gradient absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-transparent"></div>
+    </div>
+    <div class="container mx-auto px-4 z-10">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 text-center md:text-right" data-aos="fade-left">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">السيد الاخرسي</h1>
+          <div class="type-wrap text-xl md:text-2xl text-blue-400 mb-8">
+            <span>أنا </span><span id="typed"></span>
+          </div>
+          <div class="social-icons flex justify-center md:justify-end space-x-4 space-x-reverse">
+            <a target="_blank" href="https://wa.me/972594318545?text=هل أنت متاح حاليا" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a target="_blank" href="https://github.com/Saeyd-Jamal" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+              <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/alsaeyd-j-alakhras-788349313/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/saeyd_jamal/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/saeyd.jamal.545" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="mt-12">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 inline-block">
+              معرض الأعمال
+            </a>
+            <a href="#contact" class="border border-blue-600 text-blue-500 hover:bg-blue-600 hover:text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 inline-block mr-4">
+              اتصل بي
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 mt-12 md:mt-0" data-aos="fade-right">
+          <div class="hero-image relative">
+            <div id="hero-3d-container" class="w-full h-96"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#about" class="text-white opacity-50 hover:opacity-100 transition-opacity duration-300">
+        <i class="fas fa-chevron-down text-2xl"></i>
+      </a>
+    </div>
+  </section>
 
-        <title>Alsaeyd Alakhras</title>
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Alsaeyd Alakhras</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Hi, I'am <br>
-                        <span class="home__title-color">Alsaeyd Alakhras</span>
-                        <br> 
-                        <span id="job-title">Full Stack Developer</span>
-                    </h1>
-
-                    <a href="https://wa.me/972594318545?text=هل أنت متاح حاليا" target="_blank" class="button">
-                        Contact in <i class="bx bxl-whatsapp"></i>
-                    </a>
-                </div>
-
-                <div class="home__social">
-                    <a target="_blank" href="https://www.linkedin.com/in/alsaeyd-j-alakhras-788349313/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a target="_blank" href="https://www.facebook.com/saeyd.jamal.545" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
-                    <a target="_blank" href="https://www.instagram.com/saeyd_jamal/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-                    <a target="_blank" href="https://github.com/Saeyd-Jamal" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a target="_blank" href="https://wa.me/972594318545?text=هل أنت متاح حاليا" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="" id="about-image">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Alsaeyd Alakhras</h2>
-                        <p class="about__text">I am a software engineer specializing in backend development with PHP , the Laravel and Vue.js frameworks, with advanced experience in working with various types of servers and networks. I have a comprehensive background in web development, having successfully delivered several major projects for large companies in Palestine. This has enabled me to provide innovative technological solutions that meet market needs. I am always committed to enhancing my skills and programming techniques to deliver added value to the projects I work on. </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5 & CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__90">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-bootstrap skills__icon' ></i>
-                                <span class="skills__name">Tailwind CSS & Bootstrap</span>
-                            </div>
-                            <div class="skills__bar skills__80">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">Javascript & jQuery</span>
-                            </div>
-                            <div class="skills__bar skills__85">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-vuejs skills__icon' ></i>
-                                <span class="skills__name">Vue.js</span>
-                            </div>
-                            <div class="skills__bar skills__60">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-php skills__icon' ></i>
-                                <span class="skills__name">PHP Laravel</span>
-                            </div>
-                            <div class="skills__bar skills__90">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-postgresql skills__icon' ></i>
-                                <span class="skills__name">MySql (MariaDB)</span>
-                            </div>
-                            <div class="skills__bar skills__80">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/work/financial.png" alt="">
-                        <div class="work__data">
-                            <span class="work__caption">Financial Management System</span>
-                            <div class="work__bottom">
-                                <div class="work__skills">
-                                    <span class="work__skill">#jQuery</span>
-                                    <span class="work__skill">#laravel</span>
-                                </div>
-                                <div class="work__icon">
-                                    <a href="https://github.com/Saeyd-Jamal/financial_management_system_advance" target="_blank">
-                                        <i class='bx bx-link work__icon'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work/projects.png" alt="">
-                        <div class="work__data">
-                            <span class="work__caption">Projects Management System</span>
-                            <div class="work__bottom">
-                                <div class="work__skills">
-                                    <span class="work__skill">#jQuery</span>
-                                    <span class="work__skill">#laravel</span>
-                                </div>
-                                <div class="work__icon">
-                                    <a href="https://github.com/Saeyd-Jamal/projects_management_system_salah" target="_blank">
-                                        <i class='bx bx-link work__icon'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work/operations_salah.png" alt="">
-                        <div class="work__data">
-                            <span class="work__caption">Operations Records</span>
-                            <div class="work__bottom">
-                                <div class="work__skills">
-                                    <span class="work__skill">#vue.js</span>
-                                    <span class="work__skill">#laravel</span>
-                                </div>
-                                <div class="work__icon">
-                                    <a href="https://github.com/Saeyd-Jamal/operations_salah" target="_blank">
-                                        <i class='bx bx-link work__icon'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work/touch.png" alt="">
-                        <div class="work__data">
-                            <span class="work__caption">Touch landing</span>
-                            <div class="work__bottom">
-                                <div class="work__skills">
-                                    <span class="work__skill">#tailwind</span>
-                                    <span class="work__skill">#jQuery</span>
-                                </div>
-                                <div class="work__icon">
-                                    <a href="https://saeyd-jamal.github.io/Touch-landing" target="_blank">
-                                        <i class='bx bx-link-external work__icon'></i>
-                                    </a>
-                                    <a href="https://github.com/Saeyd-Jamal/Touch-landing" target="_blank">
-                                        <i class='bx bx-link work__icon'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work/6.png" alt="">
-                        <div class="work__data">
-                            <span class="work__caption">Restaurant Web</span>
-                            <div class="work__bottom">
-                                <div class="work__skills">
-                                    <span class="work__skill">#tailwind</span>
-                                    <span class="work__skill">#jQuery</span>
-                                </div>
-                                <div class="work__icon">
-                                    <a href="https://github.com/Saeyd-Jamal/Restaurant-Web-Palgoas" target="_blank">
-                                        <i class='bx bx-link work__icon'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work/8.png" alt="">
-                        <div class="work__data">
-                            <span class="work__caption">Travel Agency</span>
-                            <div class="work__bottom">
-                                <div class="work__skills">
-                                    <span class="work__skill">#html</span>
-                                    <span class="work__skill">#css</span>
-                                    <span class="work__skill">#js</span>
-                                </div>
-                                <div class="work__icon">
-                                    <a href="https://saeyd-jamal.github.io/Travel-Agency/" target="_blank">
-                                        <i class='bx bx-link-external work__icon'></i>
-                                    </a>
-                                    <a href="https://github.com/Saeyd-Jamal/Travel-Agency" target="_blank">
-                                        <i class='bx bx-link work__icon'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ===== CONTACT =====
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section> -->
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Alsaeyd Alakhras</p>
-            <div class="footer__social">
-                <a target="_blank" href="https://www.linkedin.com/in/alsaeyd-j-alakhras-788349313/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a target="_blank" href="https://www.facebook.com/saeyd.jamal.545" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-                <a target="_blank" href="https://www.instagram.com/saeyd_jamal/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-                <a target="_blank" href="https://github.com/Saeyd-Jamal" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                <a target="_blank" href="https://wa.me/972594318545?text=هل أنت متاح حاليا" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800 relative overflow-hidden">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">نبذة عني</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 md:pl-12 order-2 md:order-1" data-aos="fade-right" data-aos-delay="200">
+          <h3 class="text-2xl font-bold mb-4 text-blue-400">من أنا؟</h3>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            أنا مهندس برمجيات متخصص في تطوير الأنظمة الخلفية باستخدام لغة PHP، مع خبرة متقدمة في إطارَي Laravel وVue.js. أمتلك خلفية قوية في تطوير تطبيقات الويب المتكاملة، وقد أنجزت بنجاح عدة مشاريع كبرى لصالح شركات مرموقة في فلسطين.          </p>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            أعمل حاليًا كمطوّر Full Stack مع تركيز على بناء واجهات مستخدم تفاعلية باستخدام Vue.js، وتطوير واجهات برمجة تطبيقات (APIs) قوية وآمنة باستخدام Laravel. أسعى دائمًا إلى تقديم حلول تقنية مبتكرة تلبي احتياجات السوق، وأحرص على تطوير مهاراتي باستمرار لمواكبة أحدث التقنيات في عالم البرمجة.          
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="px-4 py-2 bg-gray-700 rounded-full text-sm">Laravel</div>
+            <div class="px-4 py-2 bg-gray-700 rounded-full text-sm">Vue.js</div>
+            <div class="px-4 py-2 bg-gray-700 rounded-full text-sm">PHP</div>
+            <div class="px-4 py-2 bg-gray-700 rounded-full text-sm">JavaScript</div>
+            <div class="px-4 py-2 bg-gray-700 rounded-full text-sm">MySQL</div>
+            <div class="px-4 py-2 bg-gray-700 rounded-full text-sm">Tailwind CSS</div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 mb-12 md:mb-0 order-1 md:order-2" data-aos="fade-left" data-aos-delay="200">
+          <div class="relative">
+            <div class="about-image-container rounded-lg overflow-hidden shadow-2xl">
+              <img src="/assets/about-CGh0JaCv.jpg" alt="Developer" class="w-full h-auto" />
             </div>
-        </footer>
+            <div class="absolute -top-6 -right-6 bg-blue-500 text-white p-4 rounded-lg shadow-lg">
+              <span class="block text-2xl font-bold">3+</span>
+              <span class="text-sm">سنوات خبرة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-900 relative">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">مهاراتي</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Laravel</span>
+            <span class="text-blue-400">90%</span>
+          </div>
+          <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+            <div class="skill-progress h-full bg-blue-500 rounded-full w-0" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Vue.js</span>
+            <span class="text-blue-400">85%</span>
+          </div>
+          <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+            <div class="skill-progress h-full bg-blue-500 rounded-full w-0" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Tailwind CSS</span>
+            <span class="text-blue-400">95%</span>
+          </div>
+          <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+            <div class="skill-progress h-full bg-blue-500 rounded-full w-0" data-progress="95"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">MySQL</span>
+            <span class="text-blue-400">80%</span>
+          </div>
+          <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+            <div class="skill-progress h-full bg-blue-500 rounded-full w-0" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">REST APIs</span>
+            <span class="text-blue-400">88%</span>
+          </div>
+          <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+            <div class="skill-progress h-full bg-blue-500 rounded-full w-0" data-progress="88"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">JavaScript</span>
+            <span class="text-blue-400">85%</span>
+          </div>
+          <div class="h-3 bg-gray-700 rounded-full overflow-hidden">
+            <div class="skill-progress h-full bg-blue-500 rounded-full w-0" data-progress="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="assets/js/scrollreveal.js"></script>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-800 relative">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">أعمالي</h2>
+      
+      <!-- Projects Filter -->
+      <div class="flex flex-wrap justify-center mb-12" data-aos="fade-up">
+        <div class="relative inline-block w-64 mb-4 md:mb-0">
+          <select id="project-filter" class="block appearance-none w-full bg-gray-700 border border-gray-600 text-white py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-gray-600">
+            <option value="all">جميع المشاريع</option>
+            <option value="Laravel">Laravel</option>
+            <option value="Vue">Vue.js</option>
+            <option value="API">REST API</option>
+            <option value="Tailwind">Tailwind CSS</option>
+            <option value="Dashboard">لوحات تحكم</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2 text-white">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="Laravel,Dashboard" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="نظام إدارة الأصول" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Laravel
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">نظام الإدارة المالية</h3>
+              <p class="text-gray-300 text-sm mb-4">نظام لمؤسسة خيرية وتم بنائه على أساسها القائمة عليه ويهدف لإدارة الأمور المالية الخاصة بها</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MySQL</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Bootstrap</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">jQuery</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <!-- <a target="_blank" href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a> -->
+                <a target="_blank" href="https://github.com/Saeyd-Jamal/financial_management_system_advance" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <!-- Project 2 -->
+        <div class="project-card" data-category="Laravel,Dashboard" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="نظام إدارة المشاريع" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Laravel
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">نظام إدارة المشاريع</h3>
+              <p class="text-gray-300 text-sm mb-4">نظام متكامل لإدارة المشاريع وأمورها المالية الموجودة</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MySQL</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Bootstrap</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">jQuery</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <!-- <a target="_blank" href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a> -->
+                <a target="_blank" href="https://github.com/Saeyd-Jamal/projects_management_system_salah" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="Laravel,Vue,API" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="متجر إلكتروني" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Full Stack
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">إدارة سجلات مشروع طبي</h3>
+              <p class="text-gray-300 text-sm mb-4">نظام إدارة سجلات لمشروع من خلال طباعة التقارير وادراة المرضى الموجودي</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Vue.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MySQL</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <!-- <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a> -->
+                <a target="_blank" href="https://github.com/Saeyd-Jamal/operations_salah" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="Tailwind" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="/assets/touch-BYTwvCvT.png" alt="Touch landing" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Tailwind
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">صفحة هبوط Touch</h3>
+              <!-- <p class="text-gray-300 text-sm mb-4">منصة تعليمية متكاملة مع ميزات الدورات المسجلة والبث المباشر والاختبارات التفاعلية.</p> -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Tailwind</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">jQuery</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a target="_blank" href="https://saeyd-jamal.github.io/Touch-landing" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a target="_blank" href="https://github.com/Saeyd-Jamal/Touch-landing" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="Tailwind" data-aos="fade-up" data-aos-delay="500">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="/assets/6-C-HYvEs5.png" alt="تطبيق محادثة فورية" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Tailwind
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">موقع مطعم</h3>
+              <p class="text-gray-300 text-sm mb-4">موقع لمطعم إلكتروني والذي يقدم الطلبات للزبائن من خلال الحجز</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Tailwind</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">jQuery</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <!-- <a target="_blank" href="https://saeyd-jamal.github.io/Restaurant-Web-Palgoas" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a> -->
+                <a target="_blank" href="https://github.com/Saeyd-Jamal/Restaurant-Web-Palgoas" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6 -->
+        <div class="project-card" data-category="HTML, CSS, JS" data-aos="fade-up" data-aos-delay="600">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="/assets/8-vyuXHjZ1.png" alt="Travel Agency" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Frontend
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Travel Agency</h3>
+              <!-- <p class="text-gray-300 text-sm mb-4">نظام إدارة علاقات العملاء (CRM) مع تتبع الفرص والمبيعات والتقارير المتقدمة.</p> -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">HTML</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">CSS</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">JavaScript</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a target="_blank" href="https://saeyd-jamal.github.io/Travel-Agency/" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a target="_blank" href="https://github.com/Saeyd-Jamal/Travel-Agency" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <div class="project-card" data-category="Laravel,Dashboard" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="نظام إدارة الأصول" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Laravel
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">نظام إدارة الأصول</h3>
+              <p class="text-gray-300 text-sm mb-4">نظام متكامل لإدارة الأصول والمخزون للشركات، مع تقارير وإحصاءات متقدمة.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MySQL</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Bootstrap</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="Vue,API" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="منصة التعلم الإلكتروني" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Vue.js
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">منصة التعلم الإلكتروني</h3>
+              <p class="text-gray-300 text-sm mb-4">منصة تعليمية متكاملة مع ميزات الدورات المسجلة والبث المباشر والاختبارات التفاعلية.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Vue.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Node.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MongoDB</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="Laravel,Vue,API" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="متجر إلكتروني" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Full Stack
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">متجر إلكتروني</h3>
+              <p class="text-gray-300 text-sm mb-4">متجر إلكتروني كامل مع نظام سلة التسوق والدفع وإدارة المنتجات والطلبات.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Vue.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MySQL</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Stripe</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="Laravel,Dashboard" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="نظام إدارة المشاريع" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Laravel
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">نظام إدارة المشاريع</h3>
+              <p class="text-gray-300 text-sm mb-4">نظام متكامل لإدارة المشاريع والمهام وتتبع الوقت وإدارة الفريق.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Livewire</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Alpine.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">MySQL</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="Vue,API" data-aos="fade-up" data-aos-delay="500">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80" alt="تطبيق محادثة فورية" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Vue.js
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">تطبيق محادثة فورية</h3>
+              <p class="text-gray-300 text-sm mb-4">تطبيق محادثة فورية مع ميزات الدردشة الجماعية والرسائل المباشرة ومشاركة الملفات.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Vue.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Firebase</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">WebSockets</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="Laravel,Vue,Dashboard" data-aos="fade-up" data-aos-delay="600">
+          <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="نظام إدارة العملاء" class="w-full h-48 object-cover">
+              <div class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-medium px-2 py-1 m-2 rounded">
+                Full Stack
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">نظام إدارة العملاء</h3>
+              <p class="text-gray-300 text-sm mb-4">نظام إدارة علاقات العملاء (CRM) مع تتبع الفرص والمبيعات والتقارير المتقدمة.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Laravel</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Vue.js</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">Tailwind CSS</span>
+                <span class="px-2 py-1 bg-gray-600 rounded-full text-xs">PostgreSQL</span>
+              </div>
+              <div class="flex space-x-4 space-x-reverse">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  مشاهدة المشروع
+                </a>
+                <a href="#" class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white text-sm px-4 py-2 rounded-full transition-colors duration-300">
+                  <i class="fab fa-github ml-1"></i> شفرة المصدر
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 relative">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">اتصل بي</h2>
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="text-2xl font-bold mb-6 text-blue-400">لنتواصل</h3>
+          <p class="text-gray-300 mb-8 leading-relaxed">
+            أنا متاح للعمل الحر ومشاريع التعاون. إذا كان لديك مشروع ترغب في مناقشته، فلا تتردد في التواصل معي.
+          </p>
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center mr-4">
+              <i class="fas fa-envelope text-blue-500"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-medium">البريد الإلكتروني</h4>
+              <a href="mailto:alsaeydjalakhras@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">alsaeydjalakhras@gmail.com</a>
+            </div>
+          </div>
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center mr-4">
+              <i class="fas fa-phone text-blue-500"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-medium">الهاتف</h4>
+              <a href="https://wa.me/972594318545?text=هل أنت متاح حاليا" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">+972594318545</a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center mr-4">
+              <i class="fas fa-map-marker-alt text-blue-500"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-medium">الموقع</h4>
+              <p class="text-gray-400">فلسطين - غزة</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2" data-aos="fade-left" data-aos-delay="100">
+          <form id="contact-form" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+            <div class="mb-6">
+              <label for="name" class="block text-sm font-medium mb-2">الاسم</label>
+              <input type="text" id="name" name="name" class="w-full bg-gray-700 border-0 rounded-md py-3 px-4 text-white focus:ring-2 focus:ring-blue-500 focus:bg-gray-600" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-sm font-medium mb-2">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-700 border-0 rounded-md py-3 px-4 text-white focus:ring-2 focus:ring-blue-500 focus:bg-gray-600" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <div class="mb-6">
+              <label for="subject" class="block text-sm font-medium mb-2">الموضوع</label>
+              <input type="text" id="subject" name="subject" class="w-full bg-gray-700 border-0 rounded-md py-3 px-4 text-white focus:ring-2 focus:ring-blue-500 focus:bg-gray-600" placeholder="أدخل موضوع الرسالة" required>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-medium mb-2">الرسالة</label>
+              <textarea id="message" name="message" rows="4" class="w-full bg-gray-700 border-0 rounded-md py-3 px-4 text-white focus:ring-2 focus:ring-blue-500 focus:bg-gray-600" placeholder="أدخل رسالتك" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition-colors duration-300">
+              إرسال الرسالة
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-900 border-t border-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-gray-400">&copy; 2025 السيد الاخرسي. جميع الحقوق محفوظة.</p>
+        </div>
+        <div class="flex space-x-4 space-x-reverse">
+          <a target="_blank" href="https://wa.me/972594318545?text=هل أنت متاح حاليا" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a target="_blank" href="https://github.com/Saeyd-Jamal" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/alsaeyd-j-alakhras-788349313/" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/saeyd_jamal/" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/saeyd.jamal.545" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
